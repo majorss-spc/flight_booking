@@ -1,8 +1,8 @@
-﻿from pydantic import BaseModel, ConfigDict, Field
+﻿
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class BookingCreate(BaseModel):
-    user_id: int = Field(gt=0)
     flight_id: int = Field(gt=0)
     number_of_seats: int = Field(gt=0)
 
